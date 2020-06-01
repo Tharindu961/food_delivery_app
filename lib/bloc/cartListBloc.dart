@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:bloc_pattern/bloc_pattern.dart';
-import 'package:food_delivery/bloc/provider.dart';
-import 'package:food_delivery/model/food_item.dart';
+import 'package:food_delivery_app/lib/bloc/provider.dart';
+import 'package:food_delivery_app/lib/model/food_item.dart';
 import 'package:rxdart/rxdart.dart';
 
 class CartListBloc extends BlocBase {
