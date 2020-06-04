@@ -1,6 +1,6 @@
 import 'package:food_delivery_app/model/fooditem.dart';
 
-class CartProvide {
+class CartProvider {
   List<FoodItem> foodItems = [];
 
   List<FoodItem> addToList(FoodItem foodItem) {
