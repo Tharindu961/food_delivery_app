@@ -18,11 +18,11 @@ class CartListBloc extends BlocBase {
 //input
   Sink<List<FoodItem>> get listSink => _listController.sink;
 
-  addToList(FoodItem foodItem) {
+  void addToList(FoodItem foodItem) {
     listSink.add(provider.addToList(foodItem));
   }
 
-  removeFromList(FoodItem foodItem) {
+  void removeFromList(FoodItem foodItem) {
     listSink.add(provider.removeFromList(foodItem));
     
   }

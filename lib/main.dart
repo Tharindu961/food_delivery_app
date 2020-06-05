@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/bloc/cartListBloc.dart';
@@ -21,4 +23,19 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
+class Home extends StatelessWidget {
+  @override 
+  Widget build(BuildContext context){
+    return Scaffold(
+    body: SafeArea(
+      child: Container(
+        child: ListView(
+          children: <Widget>[
+            FirstHalf();
+          ],
+        ),
+      ),
+    )
+    );
+  }
+}
