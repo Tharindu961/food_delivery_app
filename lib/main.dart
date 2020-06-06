@@ -202,6 +202,25 @@ class CustomAppBar extends StatelessWidget {
           )
         ]
       ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: <Widget>[
+          Container(
+            padding: EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(
+                color: selected ? Colors.transparent : Colors.grey,
+                width: 1.5
+              )
+            ),
+            child: Icon(
+              categoryIcon, 
+              color: Colors.),
+          )
+        ],
+      ),
      );
    }
  }
