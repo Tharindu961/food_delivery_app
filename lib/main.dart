@@ -55,7 +55,7 @@ class FirstHalf extends StatelessWidget {
   }
 }
 
-class CustomAppBar extends StatefulWidget {
+class CustomAppBar extends StatelessWidget {
   @override 
   Widget build(BuildContext context) {
     return Container(
@@ -64,13 +64,16 @@ class CustomAppBar extends StatefulWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Icon(Icons.menu),
-          Container(
-            margin: EdgeInsets.only(right: 30),
-            child: Text("0"),
-            padding: EdgeInsets.all(15),
-            decoration: BoxDecoration(
-              color: Colors.yellow[800],
-              borderRadius: BorderRadius.circular(50)
+          GestureDetector(
+            onTap: () {},
+              child: Container(
+              margin: EdgeInsets.only(right: 30),
+              child: Text("0"),
+              padding: EdgeInsets.all(15),
+              decoration: BoxDecoration(
+                color: Colors.yellow[800],
+                borderRadius: BorderRadius.circular(50)
+              ),
             ),
           )
         ],
