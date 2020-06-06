@@ -71,8 +71,15 @@ Widget categories() {
           categoryIcon : Icons.bug_report,
           categoryName : "Burgers",
           avialability : 12,
+          selceted : false,
+        ),
+
+        CategoryLisItem(
+          categoryIcon : Icons.bug_report,
+          categoryName : "Burgers",
+          avialability : 12,
           selceted : true,
-        )
+        ),
       ],
     ),
   );
