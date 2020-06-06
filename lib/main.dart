@@ -217,7 +217,30 @@ class CustomAppBar extends StatelessWidget {
             ),
             child: Icon(
               categoryIcon, 
-              color: Colors.),
+              color: Colors.black,
+              size: 30,
+              ),
+          ),
+          SizedBox(height: 10,),
+          Text(
+            categoryName,
+            style: TextStyle(
+              fontWeight: FontWeight.w200,
+              color: Colors.black,
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.fromLTRB(0, 0, 0, 10),
+            width: 1.5,
+            height: 15,
+            color: Colors.black26,
+          ),
+          Text(
+            availability.toString(),
+            style: TextStyle(
+              fontWeight: FontWeight.w600,
+              color: Colors.black
+            ),
           )
         ],
       ),
