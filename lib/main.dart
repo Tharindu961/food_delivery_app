@@ -47,8 +47,19 @@ class FirstHalf extends StatelessWidget {
       padding: EdgeInsets.fromLTRB(35, 25, 0, 0),
       child: Column(
         children: <Widget>[
-          CutomAppBar(),,
-        ],),
-    )
+          CustomAppBar(),
+
+        ],
+        ),
+    );
+  }
+}
+
+class CustomAppBar extends StatefulWidget {
+  @override 
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(bottom: 15),
+    );
   }
 }
