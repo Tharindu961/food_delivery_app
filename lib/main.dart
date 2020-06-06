@@ -1,6 +1,7 @@
 import 'dart:html';
 
 import 'package:bloc_pattern/bloc_pattern.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/bloc/cartListBloc.dart';
 
@@ -52,11 +53,31 @@ class FirstHalf extends StatelessWidget {
           title(),
           SizedBox(height: 30),
           searchBar(),
+          SizedBox(height: 30),
+          Categories(),
         ],
         ),
     );
   }
 }
+
+Widget categories() {
+  return Container(
+    height: 185,
+    child: ListView(
+      scrollDirection: Axis.horizontal,
+      children: <Widget>[
+        CategoryLisItem(
+          categoryIcon : Icons.bug_report,
+          categoryName : "Burgers",
+          avialability : 12,
+          selceted : true,
+        )
+      ],
+    ),
+  );
+}
+
 
 Widget searchBar() {
   return Row(
