@@ -164,3 +164,27 @@ class CustomAppBar extends StatelessWidget {
     );
   }
 }
+
+ class CategoryListItem extends StatelessWidget {
+
+    final IconData categoryIcon;
+    final String categoryName;
+    final int availability;
+    final bool selected;
+
+    CategoryListItem(
+      {
+        @required this.categoryIcon,
+        @required this.categoryName,
+        @required this.availability,
+        @required this.selected
+      }
+    );
+
+   @override 
+   Widget build(BuildContext context) {
+     return Container(
+
+     );
+   }
+ }
