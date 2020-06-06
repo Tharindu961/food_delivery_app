@@ -60,6 +60,18 @@ class CustomAppBar extends StatefulWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(bottom: 15),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          Icon(Icons.menu),
+          Container(
+            margin: EdgeInsets.only(right: 30),
+            child: Text("0"),
+            padding: EdgeInsets.all(15),
+            decoration: BoxDecoration(),
+          )
+        ],
+      ),
     );
   }
 }
