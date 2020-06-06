@@ -68,7 +68,10 @@ class CustomAppBar extends StatefulWidget {
             margin: EdgeInsets.only(right: 30),
             child: Text("0"),
             padding: EdgeInsets.all(15),
-            decoration: BoxDecoration(),
+            decoration: BoxDecoration(
+              color: Colors.yellow[800],
+              borderRadius: BorderRadius.circular(50)
+            ),
           )
         ],
       ),
