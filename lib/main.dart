@@ -184,7 +184,24 @@ class CustomAppBar extends StatelessWidget {
    @override 
    Widget build(BuildContext context) {
      return Container(
-
+      margin: EdgeInsets.only(right: 20),
+      padding: EdgeInsets.fromLTRB(10, 10, 10, 20),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(50),
+        color: selected ? Color(0xfffeb324) : Colors.white,
+        border: Border.all(
+          color: selected ? Colors.transparent : Colors.grey[200],
+          width: 1.5
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey[100],
+            blurRadius: 15,
+            offset: Offset(25,0),
+            spreadRadius: 5
+          )
+        ]
+      ),
      );
    }
  }
