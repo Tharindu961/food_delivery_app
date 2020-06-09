@@ -32,7 +32,7 @@ class Home extends StatelessWidget {
       child: Container(
         child: ListView(
           children: <Widget>[
-            FirstHalf();
+            FirstHalf(),
           ],
         ),
       ),
@@ -54,7 +54,7 @@ class FirstHalf extends StatelessWidget {
           SizedBox(height: 30),
           searchBar(),
           SizedBox(height: 30),
-          Categories(),
+          categories(),
         ],
         ),
     );
@@ -92,6 +92,12 @@ Widget categories() {
           availability : 12,
           selected : false,
         ),
+         CategoryListItem(
+          categoryIcon : Icons.bug_report,
+          categoryName : "Burgers",
+          availability : 12,
+          selected : false,
+        ),
       ],
     ),
   );
@@ -119,7 +125,7 @@ Widget searchBar() {
         ),
       )
     ],
-  )
+  );
 }
 
 Widget title() {
@@ -146,7 +152,7 @@ Widget title() {
         ],
       )
     ],
-  )
+  );
 }
 
 
