@@ -48,10 +48,29 @@ class Home extends StatelessWidget {
 }
 
 class ItemContainer extends StatelessWidget {
+  final FoodItem foodItem;
+
+  ItemContainer({@required this.foodItem});
+
   @override
   Widget build(BuildContext context) {
-    
+    return GestureDetector(
+      onTap: (){
+
+      },
+      child: Items(
+        hotel : foodItem.hotel,
+        itemName : foodItem.title,
+        itemPrice : foodItem.price,
+        imgUrl : foodItem.imgUrl,
+        leftAligned: (foodItem.id % 2 == 0) ? true : false
+      ),
+    );
   }
+}
+
+class Items extends StatelessWidget {
+  
 }
 
 class FirstHalf extends StatelessWidget {
