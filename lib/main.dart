@@ -93,8 +93,28 @@ class Items extends StatelessWidget {
       children: <Widget>[
         Container(
           padding: EdgeInsets.only(
-            left: leftAligned ? 0 :
-          )
+            left: leftAligned ? 0 : containerPadding,
+            right : leftAligned ? containerPadding : 0,
+          ),
+          child: Column(
+            children: <Widget>[
+              Container(
+                width: double.infinity,
+                height: 200,
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.horizontal(
+                    left: leftAligned 
+                    ? Radius.circular(0)
+                    : Radius.circular(containerBorderRadius),
+                    right: leftAligned
+                    ? Radius.circular(containerBorderRadius)
+                    :Radius.circular(0),
+                  ),
+                ),
+              )
+            ],
+            ),
         )
       ],
     );
