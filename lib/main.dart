@@ -67,18 +67,30 @@ Widget categories() {
     child: ListView(
       scrollDirection: Axis.horizontal,
       children: <Widget>[
-        CategoryLisItem(
+        CategoryListItem(
           categoryIcon : Icons.bug_report,
           categoryName : "Burgers",
-          avialability : 12,
-          selceted : false,
+          availability : 12,
+          selected : true,
         ),
 
-        CategoryLisItem(
+        CategoryListItem(
+          categoryIcon : Icons.bug_report,
+          categoryName : "Pizza",
+          availability : 12,
+          selected : false,
+        ),
+        CategoryListItem(
+          categoryIcon : Icons.bug_report,
+          categoryName : "Rolls",
+          availability : 12,
+          selected : false,
+        ),
+        CategoryListItem(
           categoryIcon : Icons.bug_report,
           categoryName : "Burgers",
-          avialability : 12,
-          selceted : true,
+          availability : 12,
+          selected : false,
         ),
       ],
     ),
