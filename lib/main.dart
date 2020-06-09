@@ -4,6 +4,7 @@ import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/bloc/cartListBloc.dart';
+import 'package:food_delivery_app/model/fooditem.dart';
 
 void main() => runApp(MyApp());
 
@@ -33,11 +34,23 @@ class Home extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             FirstHalf(),
+            SizedBox(height: 45),
+            for(var foodItem in  fooditemList.foodItems)
+            ItemContainer(foodItem : foodItem)
+
+
           ],
         ),
       ),
-    )
+    ),
     );
+  }
+}
+
+class ItemContainer extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    
   }
 }
 
