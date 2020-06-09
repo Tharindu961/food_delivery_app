@@ -70,7 +70,12 @@ class ItemContainer extends StatelessWidget {
 }
 
 class Items extends StatelessWidget {
-  
+  Items();
+
+  @override 
+  Widget build(BuildContext context){
+    return Container();
+  }
 }
 
 class FirstHalf extends StatelessWidget {
