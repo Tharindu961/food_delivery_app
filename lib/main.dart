@@ -75,7 +75,7 @@ class Items extends StatelessWidget {
     @required this.imgUrl,
     @required this.itemName,
     @required this.itemPrice,
-    @required this.hotl
+    @required this.hotel
   });
 
   final bool leftAligned;
@@ -86,7 +86,18 @@ class Items extends StatelessWidget {
 
   @override 
   Widget build(BuildContext context){
-    return Container();
+    double containerPadding = 45;
+    double containerBorderRadius = 10;
+
+    return Column(
+      children: <Widget>[
+        Container(
+          padding: EdgeInsets.only(
+            left: leftAligned ? 0 :
+          )
+        )
+      ],
+    );
   }
 }
 
