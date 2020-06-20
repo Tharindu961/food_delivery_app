@@ -122,6 +122,10 @@ class Items extends StatelessWidget {
                 padding: EdgeInsets.only(
                   left: leftAligned ? 20 :  0,
                   right: leftAligned ? 0 : 20,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  
                 )
               )
             ],
