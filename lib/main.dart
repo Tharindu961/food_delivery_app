@@ -125,7 +125,21 @@ class Items extends StatelessWidget {
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  
+                  children: <Widget>[
+                    Row(
+                      children: <Widget>[
+                        Expanded(
+                          child: Text(
+                            itemName,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 18
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
                 )
               )
             ],
