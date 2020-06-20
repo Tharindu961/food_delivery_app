@@ -149,7 +149,10 @@ class Items extends StatelessWidget {
                       alignment: Alignment.centerLeft,
                       child: RichText(
                         text: TextSpan(
-                          style: ),
+                          style: TextStyle(
+                            color: Colors.black45,
+                            fontSize: 15
+                          )),
                       ),)
                   ],
                 )
