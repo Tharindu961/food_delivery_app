@@ -143,7 +143,14 @@ class Items extends StatelessWidget {
                           fontSize: 18
                         ))
                       ],
-                    )
+                    ),
+                    SizedBox(height: 10),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: RichText(
+                        text: TextSpan(
+                          style: ),
+                      ),)
                   ],
                 )
               )
