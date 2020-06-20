@@ -137,6 +137,11 @@ class Items extends StatelessWidget {
                             ),
                           ),
                         ),
+                        Text("\$$itemPrice",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w700,
+                          fontSize: 18
+                        ))
                       ],
                     )
                   ],
