@@ -152,8 +152,20 @@ class Items extends StatelessWidget {
                           style: TextStyle(
                             color: Colors.black45,
                             fontSize: 15
-                          )),
-                      ),)
+                          ),
+                          children: [
+                            TextSpan(text: "by "),
+                            TextSpan(
+                              text: hotel,
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700
+                                )
+                            )
+                          ]
+                          ),
+                      ),
+                      ),
+                      SizedBox(height: containerPadding)
                   ],
                 )
               )
