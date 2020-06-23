@@ -52,6 +52,12 @@ class ItemContainer extends StatelessWidget {
 
   ItemContainer({@required this.foodItem});
 
+  final CartListBloc bloc   = BlocProvider.getBloc<CartListBloc>();
+
+  addToCart(FoodItem foodItem) {
+      bloc.addToList(foodItem);
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
