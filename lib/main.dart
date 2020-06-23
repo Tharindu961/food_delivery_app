@@ -335,8 +335,9 @@ class CustomAppBar extends StatelessWidget {
   }
 
   GestureDetector buildGestureDetector(
-    
-  )
+    int length, BuildContext context, List<FoodItem> foodItems){
+      
+    }
 
 }
 
