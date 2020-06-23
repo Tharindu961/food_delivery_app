@@ -62,6 +62,14 @@ class ItemContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){
+        addToCart(foodItem);
+
+        final snackbar = SnackBar(
+          content: Text("${foodItem.title} added to the cart"),
+          duration: Duration(microseconds: 550),
+        );
+
+        Scaffold.of(context).showSnackBar(snackbar);
 
       },
       child: Items(
