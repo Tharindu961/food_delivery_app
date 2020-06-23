@@ -336,7 +336,16 @@ class CustomAppBar extends StatelessWidget {
 
   GestureDetector buildGestureDetector(
     int length, BuildContext context, List<FoodItem> foodItems){
-      
+      return GestureDetector(
+        onTap: () {},
+        child: Container(
+          margin: EdgeInsets.only(right: 30),
+          child: Text(length.toString()),
+          padding: EdgeInsets.all(15),
+          decoration: BoxDecoration(
+            color: Colors.yellow[800], borderRadius: BorderRadius.circular(50)),
+        ),
+      );
     }
 
 }
