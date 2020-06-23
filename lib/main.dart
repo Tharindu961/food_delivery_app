@@ -321,11 +321,23 @@ class CustomAppBar extends StatelessWidget {
           Icon(Icons.menu),
           StreamBuilder(
             stream: bloc.listStream,
+            builder: (context, snapshot) {
+              List<FoodItem> foodItems = snapshot.data;
+
+              int length = foodItems != null ? foodItems.length : 0;
+
+              return buildGestureDetector(length, context, foodItems);
+            },
           )
         ],
       ),
     );
   }
+
+  GestureDetector buildGestureDetector(
+    
+  )
+
 }
 
  class CategoryListItem extends StatelessWidget {
