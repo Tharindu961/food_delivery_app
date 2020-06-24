@@ -35,6 +35,10 @@ class Cart extends StatelessWidget {
 
 class CartBody extends StatelessWidget {
 
+  final List<FoodItem> foodItems;
+
+  CartBody(this.foodItems);
+
 
   @override
   Widget build(BuildContext context){
