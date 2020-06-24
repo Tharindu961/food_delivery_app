@@ -26,9 +26,20 @@ class Cart extends StatelessWidget {
                 child: CartBody(foodItems),
               ),
             ),
-          )
+          );
         }
       },
     );
   }
+}
+
+class CartBody extends StatelessWidget {
+
+
+  @override
+  Widget build(BuildContext context){
+    return Container(
+
+    );
+  } 
 }
