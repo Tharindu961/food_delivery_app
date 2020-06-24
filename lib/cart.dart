@@ -52,3 +52,12 @@ class CartBody extends StatelessWidget {
     );
   } 
 }
+
+class CustomAppBar extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      
+    );
+  }
+}
