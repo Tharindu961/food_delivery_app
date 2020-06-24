@@ -54,10 +54,23 @@ class CartBody extends StatelessWidget {
 }
 
 class CustomAppBar extends StatelessWidget {
+
+  final CartListBloc bloc = BlocProvider.getBloc<CartListBloc>();
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: <Widget>[
+        Padding(
+          padding: EdgeInsets.all(5),
+          child: GestureDetector(
+            child: Icon(
+              CupertinoIcons.back,
+            ),
+          ),
+        )
+      ],
     );
   }
 }
