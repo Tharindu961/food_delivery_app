@@ -43,7 +43,12 @@ class CartBody extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return Container(
-
+      padding: EdgeInsets.fromLTRB(35, 40, 25, 0),
+      child: Column(
+        children: <Widget>[
+          CustomAppBar(),
+        ]
+      )
     );
   } 
 }
