@@ -77,8 +77,15 @@ class CustomAppBar extends StatelessWidget {
         GestureDetector(
           child: Padding(
             padding: EdgeInsets.all(5.0),
+            child: Icon(
+              CupertinoIcons.delete,
+              size: 35,
+            ),
           ),
-        )
+          onTap: () {
+            
+          },
+        ),
       ],
     );
   }
