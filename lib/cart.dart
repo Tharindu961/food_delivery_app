@@ -20,6 +20,13 @@ class Cart extends StatelessWidget {
       builder: (context, snapshot) {
         if (snapshot.data != null){
           foodItems = snapshot.data;
+          return Scaffold(
+            body: SafeArea(
+              child: Container(
+                child: CartBody(foodItems),
+              ),
+            ),
+          )
         }
       },
     );
